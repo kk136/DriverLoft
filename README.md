@@ -1,1 +1,19 @@
-Driverloft is a web application, which allows the manager to track their drivers while they are on the road. It also sends a mail to the manager whenever their driver alert level falls below a certain threshold. The application uses HTML at its front end while at its backend Python with Flask as it micro-framework provides all the functionality. OpenCV library has been used which provides the necessary procedures for Face and eye detection techniques. The input is taken from the webcam, which is at the client’s end, and then the video stream is sent to the server where it is worked. It allows users to register on the application only after confirming their identities using their email address. It also requires the user to first allow their faces to be stored in the face database. This face database is then used to authenticate the identity of the user the next time they log in. Only the users who have their face stored in the database will be allowed to log in. The web application along with this has all the basic functionalities of the web application such as forget the password, change the password, change email and authentication.
+Driverloft is a web application, which allows the manager to track their drivers while they are on the road. 
+
+#### Features: ####
+* Registration and login system with email verification 
+* Login using Face detection
+* Google API implementation to show route
+* Drowsiness detection using eye detection
+
+ ** First Steps **
+ Run the following commands to create a databse
+ 
+ 
+ ` python manage.py db init`
+ `python manage.py db uppgrade`
+ `python manage.py db merge`
+ 
+ Finally to run the local server
+ 
+ `python manage.py runserver --threaded`
