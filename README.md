@@ -10,9 +10,9 @@ Driverloft is a web application, which allows the manager to track their drivers
  Run the following commands to create a databse
  
  
- ` python manage.py db init`
- `python manage.py db uppgrade`
- `python manage.py db merge`
+ ` python manage.py db init`  
+ `python manage.py db uppgrade`  
+ `python manage.py db merge`  
  
  Finally to run the local server
  
